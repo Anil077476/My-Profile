@@ -1,0 +1,20 @@
+<div class="tab-list">
+  <span *ngFor="let experience of experiences.employments; let i = index" (click)="onCompanyClick(i)">{{
+    experience.company
+  }}</span>
+  <div class="bright-line" [ngStyle]="highlighterStyles"></div>
+</div>
+<div class="content">
+  <div class="exp-content">
+    <h3>
+      <span>{{ experiences.employments[activeTabId].role }}</span>
+      <span class="company">&nbsp;@&nbsp; {{ experiences.employments[activeTabId].company }}</span>
+    </h3>
+    <p class="range">{{ experiences.employments[activeTabId].range }}</p>
+    <div>
+      <ul *ngFor="let note of experiences.employments[activeTabId].notes">
+        <li>{{ note }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

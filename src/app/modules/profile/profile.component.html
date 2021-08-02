@@ -1,7 +1,15 @@
-<div class="body-container">
+<section class="section first-section">
   <app-introduction
-    class="section first-section"
     [quickIntroduction]="profile.quickIntroduction"
     [name]="profile.name"
-    [subIntroduction]="profile.subIntroduction"></app-introduction>
-</div>
+    [subIntroduction]="profile.subIntroduction"
+  ></app-introduction>
+</section>
+<section class="section">
+  <h2 class="section-heading">About Me</h2>
+  <app-about-me [about]="profile.about"> </app-about-me>
+</section>
+<section class="section">
+  <h2 class="section-heading">My Journey as a ThoughWorker @ThoughtWorks</h2>
+  <app-experience class="inner" [experiences]="profile.experience"></app-experience>
+</section>

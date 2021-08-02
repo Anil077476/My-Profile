@@ -3,7 +3,7 @@ export type Profile = {
   quickIntroduction: string;
   subIntroduction: string;
   about: About;
-  experience: Experiences;
+  experience: Experience;
   contact: Contact;
 };
 
@@ -14,16 +14,14 @@ export type About = {
   techStacks: string[];
 };
 export type Employment = {
-  Role: string;
+  role: string;
   company: string;
-  heading: string;
-  clients: clientExp[];
+  range: string;
+  link: string;
+  notes: string[];
 };
-export type clientExp = {
-  heading: string;
-  moreInfo: string[];
-};
-export type Experiences = {
+
+export type Experience = {
   heading: string;
   employments: Employment[];
 };
