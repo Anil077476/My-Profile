@@ -17,7 +17,7 @@ export type Employment = {
   role: string;
   company: string;
   range: string;
-  link: string;
+  link: URL;
   notes: string[];
 };
 

@@ -15,7 +15,7 @@ const Gojek: Employment = {
   company: 'Gojek',
   range: '2019 May - 2019 Dec',
   notes: ['Some random'],
-  link: '',
+  link: new URL('https://www.gojek.io/'),
 };
 
 const GS: Employment = {
@@ -23,7 +23,7 @@ const GS: Employment = {
   company: 'Goldman Sachs',
   range: '2020 Mar - Present',
   notes: ['Some random'],
-  link: '',
+  link: new URL('https://www.goldmansachs.com/'),
 };
 
 const experience: Experience = {

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Experience } from '../modules/profile/types';
-import { StylesClass } from '@angular-devkit/build-angular/src/browser/schema';
+import Utils from '../../Utlis';
 
 @Component({
   selector: 'app-experience',
@@ -8,6 +8,8 @@ import { StylesClass } from '@angular-devkit/build-angular/src/browser/schema';
   styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
+  goto = Utils.goto;
+
   @Input() experiences: Experience;
   activeTabId = 0;
   highlighterStyles: any = { transform: `translateY(calc(0 * var(--tab-height)))` };

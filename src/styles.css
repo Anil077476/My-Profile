@@ -29,6 +29,9 @@ h6 {
   line-height: 1.1;
 }
 
+body::-webkit-scrollbar-track {
+  background: var(--navy);
+}
 p > a {
   display: inline-block;
   text-decoration: none;

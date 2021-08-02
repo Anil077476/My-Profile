@@ -8,7 +8,12 @@
   <div class="exp-content">
     <h3>
       <span>{{ experiences.employments[activeTabId].role }}</span>
-      <span class="company">&nbsp;@&nbsp; {{ experiences.employments[activeTabId].company }}</span>
+      <span class="company"
+        >&nbsp;@&nbsp;
+        <a (click)="goto(experiences.employments[activeTabId].link)">{{
+          experiences.employments[activeTabId].company
+        }}</a></span
+      >
     </h3>
     <p class="range">{{ experiences.employments[activeTabId].range }}</p>
     <div>
