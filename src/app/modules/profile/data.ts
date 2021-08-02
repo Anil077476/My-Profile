@@ -6,7 +6,7 @@ const about: About = {
     // prettier-ignore
     'Hello! I\'m Tilak puli, a software engineer who enjoys building things that makes life better.',
   extendedIntroduction:
-    ' I develop exceptional websites and web apps that provide responsive and friendly user interfaces with efficient backends.',
+    'I develop exceptional websites and web apps that provide responsive and friendly user interfaces with efficient backends.',
   techStacks: ['javascript', 'react'],
 };
 
@@ -25,7 +25,9 @@ const experience: Experiences = {
 
 export const profile: Profile = {
   name: 'Tilak Puli',
-  quickIntroduction: 'Passionate Engineer who builds things for fun.',
+  quickIntroduction: 'I build things to make life better.',
+  subIntroduction:
+    "I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Upstatement.",
   about,
   experience,
   contact: { email: 'tilakpuli15@gmail.com' },

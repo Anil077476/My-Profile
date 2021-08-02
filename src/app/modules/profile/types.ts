@@ -1,6 +1,7 @@
 export type Profile = {
   name: string;
   quickIntroduction: string;
+  subIntroduction: string;
   about: About;
   experience: Experiences;
   contact: Contact;
