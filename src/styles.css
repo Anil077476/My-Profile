@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* margin: 0px 0px 10px; */
+  margin: 0px 0px 10px;
   font-weight: 600;
   color: var(--lightest-slate);
   line-height: 1.1;
@@ -35,6 +35,20 @@ p > a {
   text-decoration-skip-ink: auto;
   position: relative;
   transition: var(--transition);
+  color: var(--green);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+
+a:hover,
+a:focus {
   color: var(--green);
 }
 

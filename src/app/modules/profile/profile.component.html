@@ -1,15 +1,30 @@
-<section class="section first-section">
-  <app-introduction
-    [quickIntroduction]="profile.quickIntroduction"
-    [name]="profile.name"
-    [subIntroduction]="profile.subIntroduction"
-  ></app-introduction>
-</section>
-<section class="section">
-  <h2 class="section-heading">About Me</h2>
-  <app-about-me [about]="profile.about"> </app-about-me>
-</section>
-<section class="section">
-  <h2 class="section-heading">My Journey as a ThoughWorker @ThoughtWorks</h2>
-  <app-experience class="inner" [experiences]="profile.experience"></app-experience>
-</section>
+<main>
+  <section class="section first-section">
+    <app-introduction
+      [quickIntroduction]="profile.quickIntroduction"
+      [name]="profile.name"
+      [subIntroduction]="profile.subIntroduction"
+    ></app-introduction>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">About Me</h2>
+    <app-about-me [about]="profile.about"> </app-about-me>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">My Journey as a ThoughWorker @ThoughtWorks</h2>
+    <app-experience class="inner" [experiences]="profile.experience"></app-experience>
+  </section>
+
+  <section class="section center-section">
+    <h2 class="section-heading over-line">What's next?</h2>
+    <h2 class="title">Get In Touch</h2>
+    <p>
+      Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question
+      or just want to say hi, I'll try my best to get back to you!
+    </p>
+    <a class="email-link" href="mailto:tilakpuli15@gmail.com" rel="noopener noreferrer" target="_blank">Say Hello</a>
+  </section>
+</main>
+<footer><a href="https://github.com/tilak-puli/My-Profile">Built by Tilak Puli</a></footer>

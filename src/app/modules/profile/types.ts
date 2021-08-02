@@ -25,6 +25,7 @@ export type Experience = {
   heading: string;
   employments: Employment[];
 };
+
 export type Contact = {
   email: string;
 };
