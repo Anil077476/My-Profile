@@ -8,9 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutMeComponent } from './modules/about-me/about-me.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { RouterModule } from '@angular/router';
+import { HeaderNavComponent } from './header-nav/header-nav.component';
 
 @NgModule({
-  declarations: [AppComponent, ProfileComponent, IntroductionComponent, AboutMeComponent, ExperienceComponent],
+  declarations: [AppComponent, ProfileComponent, IntroductionComponent, AboutMeComponent, ExperienceComponent, HeaderNavComponent],
   imports: [BrowserModule, BrowserAnimationsModule, RouterModule],
   providers: [],
   bootstrap: [AppComponent],

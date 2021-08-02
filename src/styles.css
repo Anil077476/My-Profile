@@ -4,6 +4,12 @@ html,
 body {
   height: 100%;
 }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   width: 100%;
@@ -27,6 +33,16 @@ h6 {
   font-weight: 600;
   color: var(--lightest-slate);
   line-height: 1.1;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 body::-webkit-scrollbar-track {
@@ -53,6 +69,21 @@ a {
 a:hover,
 a:focus {
   color: var(--green);
+}
+
+.email-link {
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.75rem;
+  font-size: var(--fz-sm);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 50px;
 }
 
 @media (min-width: 700px) {

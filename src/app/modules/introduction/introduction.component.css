@@ -1,17 +1,23 @@
-.funky-hello{
+.funky-hello {
   margin: 0px 0px 30px 4px;
   color: var(--green);
   font-family: var(--font-mono);
-  font-size: clamp(var(--fz-sm),5vw,var(--fz-md));
+  font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
   font-weight: 400;
 }
 
-.big-heading{
+.big-heading {
   margin: 0px;
   font-size: clamp(40px, 8vw, 80px);
 }
 
-.small-text{
-  margin: 20px 0px 0px;
+.small-text {
+  margin: 50px 0px 0px;
   max-width: 540px;
+}
+
+h3 {
+  margin-top: 10px !important;
+  color: var(--slate);
+  line-height: 0.9;
 }
