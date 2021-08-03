@@ -7,7 +7,7 @@
           <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
         </h3>
         <div class="project-description">
-          <p>{{ project.description }}</p>
+          <p [innerHTML]="project.description"></p>
         </div>
         <ul class="tech-stack-list">
           <li *ngFor="let tech of project.techStack">{{ tech }}</li>

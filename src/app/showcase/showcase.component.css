@@ -51,6 +51,9 @@ li.project-wrapper {
   color: var(--light-slate);
   font-size: var(--fz-lg);
 }
+.project-description p {
+  margin: 0;
+}
 
 .tech-stack-list {
   display: flex;
