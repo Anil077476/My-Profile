@@ -10,10 +10,9 @@ import { Component, OnInit } from '@angular/core';
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="feather feather-instagram"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
     >
       <title>Instagram</title>
       <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>

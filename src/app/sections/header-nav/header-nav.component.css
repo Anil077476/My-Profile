@@ -70,3 +70,10 @@ nav {
   margin-left: 15px;
   font-size: var(--fz-xs);
 }
+
+.resume-button:hover,
+.resume-button:focus,
+.resume-button:active {
+  background-color: var(--green-tint);
+  outline: none;
+}

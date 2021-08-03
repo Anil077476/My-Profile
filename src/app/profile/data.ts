@@ -1,4 +1,4 @@
-import { About, Employment, Experience, ExternalName, Links, Profile } from './types';
+import { About, Employment, Experience, ExternalName, Links, Profile, Project } from './types';
 
 const about: About = {
   heading: 'About me',
@@ -37,6 +37,24 @@ const links: Links = {
   [ExternalName.LinkedIn]: new URL('https://www.linkedin.com/in/tilak-puli-a384111a0/'),
 };
 
+const myProfile: Project = {
+  name: 'My Profile',
+  description: 'You are currently looking at it',
+  imagePath: '/assets/MyProfile.png',
+  git: new URL('https://github.com/tilak-puli/My-Profile'),
+  link: new URL(window.location.href),
+  techStack: ['Angular', 'nodejs'],
+};
+
+const GullyScoreboard: Project = {
+  name: 'Gully Scoreboard',
+  description: 'Cricket Scoring app.',
+  imagePath: '/assets/GullyScoreboard.png',
+  git: new URL('https://github.com/tilak-puli/My-Profile'),
+  link: new URL('https://play.google.com/store/apps/details?id=com.colossal_dreams.scoreboard'),
+  techStack: ['React Native', 'nodejs'],
+};
+
 export const profile: Profile = {
   name: 'Tilak Puli',
   quickIntroduction: 'I build solutions for real life problems.',
@@ -46,4 +64,5 @@ export const profile: Profile = {
   experience,
   contact: { email: 'tilakpuli15@gmail.com' },
   links,
+  projects: [myProfile, GullyScoreboard],
 };

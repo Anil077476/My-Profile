@@ -6,6 +6,7 @@ export type Profile = {
   experience: Experience;
   contact: Contact;
   links: Links;
+  projects: Project[];
 };
 
 export type About = {
@@ -29,6 +30,15 @@ export type Experience = {
 
 export type Contact = {
   email: string;
+};
+
+export type Project = {
+  name: string;
+  imagePath: string;
+  description: string;
+  techStack: string[];
+  git: URL;
+  link: URL;
 };
 
 export enum ExternalName {

@@ -10,6 +10,7 @@ import { ExperienceComponent } from './sections/experience/experience.component'
 import { RouterModule } from '@angular/router';
 import { HeaderNavComponent } from './sections/header-nav/header-nav.component';
 import { IconsModule } from './icons/icons.module';
+import { ShowcaseComponent } from './showcase/showcase.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { IconsModule } from './icons/icons.module';
     AboutMeComponent,
     ExperienceComponent,
     HeaderNavComponent,
+    ShowcaseComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, RouterModule, IconsModule],
   providers: [],
