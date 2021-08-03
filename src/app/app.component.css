@@ -41,3 +41,48 @@ header {
   pointer-events: auto !important;
   user-select: auto !important;
 }
+
+.left {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: var(--light-slate);
+}
+
+.left ul {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.left ::ng-deep svg {
+  width: 20px;
+  height: 20px;
+  max-width: 100%;
+  stroke-width: 2;
+}
+
+.icon:hover,
+.icon:focus {
+  transform: translateY(-3px);
+  color: var(--green);
+}
+.icon {
+  padding: 10px;
+}
+
+.left ul::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { About } from '../profile/types';
+import { About } from '../../profile/types';
 
 @Component({
   selector: 'app-about-me',

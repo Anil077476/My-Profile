@@ -5,6 +5,7 @@ export type Profile = {
   about: About;
   experience: Experience;
   contact: Contact;
+  links: Links;
 };
 
 export type About = {
@@ -29,3 +30,12 @@ export type Experience = {
 export type Contact = {
   email: string;
 };
+
+export enum ExternalName {
+  Git = 'Git',
+  LinkedIn = 'LinkedIn',
+  Twitter = 'Twitter',
+  Instagram = 'Instagram',
+}
+
+export type Links = { [key in ExternalName]?: URL };

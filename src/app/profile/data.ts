@@ -1,4 +1,4 @@
-import { About, Employment, Experience, Profile } from './types';
+import { About, Employment, Experience, ExternalName, Links, Profile } from './types';
 
 const about: About = {
   heading: 'About me',
@@ -32,6 +32,11 @@ const experience: Experience = {
   employments: [GS, Gojek],
 };
 
+const links: Links = {
+  [ExternalName.Git]: new URL('https://github.com/tilak-puli/My-Profile'),
+  [ExternalName.LinkedIn]: new URL('https://www.linkedin.com/in/tilak-puli-a384111a0/'),
+};
+
 export const profile: Profile = {
   name: 'Tilak Puli',
   quickIntroduction: 'I build solutions for real life problems.',
@@ -40,4 +45,5 @@ export const profile: Profile = {
   about,
   experience,
   contact: { email: 'tilakpuli15@gmail.com' },
+  links,
 };

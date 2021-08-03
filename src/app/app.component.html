@@ -1,7 +1,23 @@
 <header><app-header-nav></app-header-nav></header>
+<div class="left">
+  <ul>
+    <li *ngIf="profile.links.Git">
+      <a class="icon" target="_blank" app-github href="{{ profile.links.Git }}"></a>
+    </li>
+    <li *ngIf="profile.links.LinkedIn">
+      <a class="icon" target="_blank" app-linked-in href="{{ profile.links.LinkedIn }}"></a>
+    </li>
+    <li *ngIf="profile.links.Instagram">
+      <a class="icon" target="_blank" app-instagram href="{{ profile.links.Instagram }}"></a>
+    </li>
+    <li *ngIf="profile.links.Twitter">
+      <a class="icon" target="_blank" app-twitter href="{{ profile.links.Twitter }}"></a>
+    </li>
+  </ul>
+</div>
 
 <main>
-  <app-profile> </app-profile>
+  <app-profile [profile]="profile"> </app-profile>
 </main>
 
 <footer>

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Experience } from '../modules/profile/types';
-import Utils from '../../Utlis';
+import { Experience } from '../../profile/types';
+import Utils from '../../../Utlis';
 
 @Component({
   selector: 'app-experience',
