@@ -53,7 +53,7 @@ const links: Links = {
 const myProfile: Project = {
   name: 'My Profile',
   description: 'You are currently looking at it. A site to showcase my skills and experience on internet.',
-  imagePath: '/assets/MyProfile.png',
+  imagePath: './assets/MyProfile.png',
   git: new URL('https://github.com/tilak-puli/My-Profile'),
   link: new URL(window.location.href),
   techStack: ['Angular', 'nodejs'],
@@ -63,7 +63,7 @@ const GullyScoreboard: Project = {
   name: 'Gully Scoreboard',
   description:
     'Cricket scoring app specifically made for gully matches with flexibility to support our gully rules. It also stats from the records like highest scores, best batsman etc',
-  imagePath: '/assets/GullyScoreboard.png',
+  imagePath: './assets/GullyScoreboard.png',
   git: new URL('https://github.com/tilak-puli/My-Profile'),
   link: new URL('https://play.google.com/store/apps/details?id=com.colossal_dreams.scoreboard'),
   techStack: ['React Native', 'nodejs'],
@@ -74,7 +74,7 @@ const CashFlow: Project = {
     'Online version of famous board game ' +
     convertToHtmlLink('CashFlow', 'https://www.richdad.com/products/cashflow-classic') +
     '. My team and I have build this whole game with only JS, HTML and CSS without help of any framework or library to understand the Javascript better and problems with weak data types and no structure.',
-  imagePath: '/assets/Cashflow.png',
+  imagePath: './assets/Cashflow.png',
   git: new URL('https://github.com/STEP-tw/cashflow-punters'),
   link: new URL('https://cashflow-punters.herokuapp.com/'),
   techStack: ['Javascript', 'nodejs', 'HTML', 'CSS'],
