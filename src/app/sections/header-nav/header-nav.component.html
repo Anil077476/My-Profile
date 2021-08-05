@@ -28,7 +28,26 @@
       <li><a href="/#contact">Contact</a></li>
     </ul>
     <div>
-      <a class="resume-button" href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a class="resume-button" href="./assets/resume.pdf" target="_blank">Resume</a>
     </div>
+  </div>
+
+  <div class="mobile-menu">
+    <div>
+      <button (click)="onHamburgerClick()" class="hamburger">
+        <div class="ham-box"><div class="ham-box-inner" [ngClass]="{ 'menu-open': menuOpen }"></div></div>
+      </button>
+    </div>
+    <aside class="side-nav" [ngClass]="{ 'side-nav-open': menuOpen }">
+      <nav>
+        <ul>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#jobs">Experience</a></li>
+          <li><a href="/#projects">Work</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+        <a href="./assets/resume.pdf" class="resume-link">Resume</a>
+      </nav>
+    </aside>
   </div>
 </nav>

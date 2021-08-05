@@ -11,18 +11,23 @@
   <app-about-me [about]="profile.about"> </app-about-me>
 </section>
 
-<section id="experience" class="section">
-  <h2 class="section-heading">My Journey as a ThoughWorker @ThoughtWorks</h2>
+<section id="experience" class="experience section">
+  <h2 class="section-heading">
+    <span>
+      Clients I've Worked With&nbsp;
+      <a href="https://www.thoughtworks.com/" target="_blank" class="small-text">@Thoughtworks</a>
+    </span>
+  </h2>
   <app-experience class="inner" [experiences]="profile.experience"></app-experience>
 </section>
 
 <section id="work" class="section">
-  <h2 class="section-heading">Some things I'have build</h2>
+  <h2 class="section-heading">Some Things I've Built</h2>
   <app-showcase [projects]="profile.projects"></app-showcase>
 </section>
 
 <section id="contact" class="section center-section">
-  <h2 class="section-heading over-line">What's next?</h2>
+  <h2 class="section-heading over-line">What's Next?</h2>
   <h2 class="title">Get In Touch</h2>
   <p>
     Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question

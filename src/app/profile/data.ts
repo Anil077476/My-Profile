@@ -48,6 +48,7 @@ const experience: Experience = {
 const links: Links = {
   [ExternalName.Git]: new URL('https://github.com/tilak-puli/My-Profile'),
   [ExternalName.LinkedIn]: new URL('https://www.linkedin.com/in/tilak-puli-a384111a0/'),
+  [ExternalName.Instagram]: new URL('https://www.instagram.com/tilakpuli/?hl=en'),
 };
 
 const myProfile: Project = {
@@ -68,6 +69,7 @@ const GullyScoreboard: Project = {
   link: new URL('https://play.google.com/store/apps/details?id=com.colossal_dreams.scoreboard'),
   techStack: ['React Native', 'nodejs'],
 };
+
 const CashFlow: Project = {
   name: 'CashFlow',
   description:

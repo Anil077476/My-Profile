@@ -10,7 +10,7 @@ import { ExperienceComponent } from './sections/experience/experience.component'
 import { RouterModule } from '@angular/router';
 import { HeaderNavComponent } from './sections/header-nav/header-nav.component';
 import { IconsModule } from './icons/icons.module';
-import { ShowcaseComponent } from './showcase/showcase.component';
+import { ShowcaseComponent } from './sections/showcase/showcase.component';
 
 @NgModule({
   declarations: [

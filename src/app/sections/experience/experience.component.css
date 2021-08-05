@@ -49,7 +49,7 @@
   height: var(--tab-height);
   border-radius: var(--border-radius);
   background: var(--green);
-  transform: translateY(calc(3 * var(--tab-height)));
+  transform: translateY(calc(var(--active-tab-id) * var(--tab-height)));
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 .content {
@@ -100,4 +100,64 @@ h3 {
   margin: 0px;
   list-style: none;
   font-size: var(--fz-lg);
+}
+
+@media (max-width: 768px) {
+  .tab-list > span {
+    padding: 0px 15px 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    display: block !important;
+  }
+
+  .tab-list {
+    display: flex;
+    overflow-x: auto;
+    width: calc(100% + 100px);
+    padding-left: 50px;
+    margin-left: -50px;
+    margin-bottom: 30px;
+  }
+
+  .bright-line {
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    max-width: var(--tab-width);
+    height: 2px;
+    margin-left: 50px;
+    transform: translateX(calc(var(--active-tab-id) * var(--tab-width)));
+  }
+
+  .tab-list > span {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 120px;
+    padding: 0px 15px;
+    border-left: 0px;
+    border-bottom: 2px solid var(--lightest-navy);
+    text-align: center;
+  }
+
+  . content {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-list {
+    width: calc(100% + 50px);
+    padding-left: 25px;
+    margin-left: -25px;
+  }
+
+  .bright-line {
+    margin-left: 25px;
+  }
 }

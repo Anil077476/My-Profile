@@ -1,8 +1,11 @@
 <div class="tab-list">
-  <span *ngFor="let experience of experiences.employments; let i = index" (click)="onCompanyClick(i)">{{
-    experience.company
-  }}</span>
-  <div class="bright-line" [ngStyle]="highlighterStyles"></div>
+  <span
+    class="tab"
+    *ngFor="let experience of experiences.employments; let i = index"
+    (click)="onCompanyClick(i, $event)"
+    >{{ experience.company }}</span
+  >
+  <div class="bright-line"></div>
 </div>
 <div class="content">
   <div class="exp-content">

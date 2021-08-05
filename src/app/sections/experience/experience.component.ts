@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostBinding, Input, OnInit } from '@angular/core';
 import { Experience } from '../../profile/types';
 import Utils from '../../../Utlis';
 
@@ -7,21 +7,25 @@ import Utils from '../../../Utlis';
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css'],
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent implements OnInit, AfterViewInit {
   goto = Utils.goto;
 
   @Input() experiences: Experience;
   activeTabId = 0;
-  highlighterStyles: any = { transform: `translateY(calc(0 * var(--tab-height)))` };
 
-  constructor() {
-    this.highlighterStyles = { transform: `translateY(calc(${this.activeTabId} * var(--tab-height)))` };
+  constructor(private host: ElementRef<HTMLElement>) {
+    this.host.nativeElement.style.setProperty(`--active-tab-id`, '0');
   }
 
-  onCompanyClick(index: number): void {
+  onCompanyClick(index: number, event: any): void {
     this.activeTabId = index;
-    this.highlighterStyles = { transform: `translateY(calc(${this.activeTabId} * var(--tab-height)))` };
+    this.host.nativeElement.style.setProperty(`--active-tab-id`, index.toString());
   }
 
   ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
+    const tabWidth = this.host.nativeElement.getElementsByClassName('tab')[0].clientWidth;
+    this.host.nativeElement.style.setProperty(`--tab-width`, tabWidth.toString() + 'px');
+  }
 }

@@ -62,19 +62,20 @@ header {
   list-style: none;
 }
 
-.left ::ng-deep svg {
+.left ::ng-deep svg,
+.social-media-links-mobile ::ng-deep svg {
   width: 20px;
   height: 20px;
   max-width: 100%;
-  stroke-width: 2;
 }
 
-.icon:hover,
-.icon:focus {
+.left .icon:hover,
+.left .icon:focus {
   transform: translateY(-3px);
   color: var(--green);
 }
-.icon {
+
+.left .icon {
   padding: 10px;
 }
 
@@ -119,4 +120,56 @@ header {
 .right a:hover,
 .right a:focus {
   transform: translateY(-3px);
+}
+
+.social-media-links-mobile ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.social-media-links-mobile ul a {
+  padding: 10px;
+}
+
+.social-media-links-mobile {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .left {
+    left: 20px;
+    right: auto;
+  }
+  header {
+    padding: 0px 40px;
+  }
+  .right {
+    right: 20px;
+    left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  header {
+    padding: 0px 25px;
+  }
+
+  .social-media-links-mobile {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    margin: 0px auto 10px;
+    color: var(--light-slate);
+  }
 }

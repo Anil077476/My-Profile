@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+html {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -8,6 +10,13 @@ body {
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+body.blur .main-content > * {
+  filter: blur(5px) brightness(0.7);
+  transition: var(--transition);
+  pointer-events: none;
+  user-select: none;
 }
 
 body {
@@ -47,6 +56,32 @@ h3 {
 a {
   cursor: pointer;
 }
+p > a:hover::after,
+p > a:focus::after,
+p > a:active::after,
+.project-content > a:hover::after,
+.company:hover > a::after {
+  width: 100%;
+}
+
+p > a::after,
+.project-content > a::after,
+.company > a::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  bottom: 0.37em;
+  background-color: var(--green);
+  transition: var(--transition);
+  opacity: 0.5;
+}
+
+a:focus {
+  outline: 2px dashed var(--green);
+  outline-offset: 3px;
+}
 
 button {
   cursor: pointer;
@@ -54,9 +89,6 @@ button {
   border-radius: 0;
 }
 
-body::-webkit-scrollbar-track {
-  background: var(--navy);
-}
 p > a {
   display: inline-block;
   text-decoration: none;
@@ -240,4 +272,73 @@ img:not([alt]) {
   font-weight: 600;
   font-style: italic;
   font-display: auto;
+}
+
+/*for small devices*/
+@media (max-width: 480px) {
+  body {
+    font-size: var(--fz-lg);
+  }
+}
+
+main {
+  padding: 0 150px;
+}
+
+@media (max-width: 1080px) {
+  main {
+    padding: 0px 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0px 25px;
+  }
+}
+@media (max-width: 480px) and (min-height: 700px) {
+  .first-section {
+    padding-bottom: 10vh;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 60px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 80px 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner {
+    display: block;
+  }
+}
+
+/* Scrollbar Styles */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--navy);
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--navy);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--navy);
+  border-radius: 10px;
 }
