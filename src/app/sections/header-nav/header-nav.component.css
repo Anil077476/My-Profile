@@ -168,14 +168,14 @@ nav {
 }
 
 .side-nav ul {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
   width: 100%;
 }
 .side-nav ul > li {
   position: relative;
-  margin: 0px auto 20px;
+  margin: 0 auto 20px;
   counter-increment: item 1;
   font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
 }
@@ -219,7 +219,7 @@ nav {
   cursor: pointer;
   transition: var(--transition);
   padding: 18px 50px;
-  margin: 10% auto 0px;
+  margin: 10% auto 0;
   width: max-content;
 }
 
@@ -244,16 +244,15 @@ nav {
     background-color: var(--light-navy);
     box-shadow: -10px 0 30px -15px var(--navy-shadow);
     z-index: 9;
-    transform: translateX(100vw);
+    transform: var(--menu-transform);
     visibility: hidden;
     transition: var(--transition);
   }
 
   .side-nav-open {
-    display: flex;
-    visibility: visible;
-    transform: translateX(0vw);
     transition: var(--transition);
+    visibility: visible;
+    display: flex;
   }
 }
 

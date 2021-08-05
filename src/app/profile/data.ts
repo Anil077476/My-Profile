@@ -1,4 +1,5 @@
-import { About, Employment, Experience, ExternalName, Links, Profile, Project } from './types';
+import { About, Employment, Experience, ExternalName, Links, Project } from './types';
+import { Profile } from '../models/profile';
 
 const convertToHtmlLink = (name: string, url: string) => `<a href="${url}">${name}</a>`;
 

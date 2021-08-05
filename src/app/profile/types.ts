@@ -1,14 +1,3 @@
-export type Profile = {
-  name: string;
-  quickIntroduction: string;
-  subIntroduction: string;
-  about: About;
-  experience: Experience;
-  contact: Contact;
-  links: Links;
-  projects: Project[];
-};
-
 export type About = {
   heading: string;
   mainIntroduction: string;

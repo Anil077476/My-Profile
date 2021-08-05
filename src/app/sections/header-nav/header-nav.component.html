@@ -35,7 +35,9 @@
   <div class="mobile-menu">
     <div>
       <button (click)="onHamburgerClick()" class="hamburger">
-        <div class="ham-box"><div class="ham-box-inner" [ngClass]="{ 'menu-open': menuOpen }"></div></div>
+        <div class="ham-box">
+          <div class="ham-box-inner" [ngClass]="{ 'menu-open': menuOpen }"></div>
+        </div>
       </button>
     </div>
     <aside class="side-nav" [ngClass]="{ 'side-nav-open': menuOpen }">

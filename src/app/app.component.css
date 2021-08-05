@@ -140,6 +140,13 @@ header {
   display: none;
 }
 
+.blur-content {
+  filter: blur(5px) brightness(0.7);
+  transition: var(--transition);
+  pointer-events: none;
+  user-select: none;
+}
+
 @media (max-width: 1080px) {
   .left {
     left: 20px;

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ExternalName, Profile } from './profile/types';
+import { ExternalName } from './profile/types';
+import { Profile } from './models/profile';
 import { profile } from './profile/data';
-import Fonts from '../assets/fonts/fonts.js';
-console.log(Fonts);
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,10 +11,15 @@ console.log(Fonts);
 export class AppComponent implements OnInit {
   title = 'Tilak Puli';
   profile: Profile;
+  sideMenuOpened: boolean;
   private ExternalName: any;
 
   ngOnInit(): void {
     this.profile = profile;
     this.ExternalName = ExternalName;
+  }
+
+  setSideMenuOpened(open: boolean): void {
+    this.sideMenuOpened = open;
   }
 }

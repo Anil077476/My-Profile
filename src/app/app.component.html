@@ -1,4 +1,4 @@
-<header><app-header-nav></app-header-nav></header>
+<header><app-header-nav [setSideMenuOpened]="setSideMenuOpened.bind(this)"></app-header-nav></header>
 <div class="left">
   <ul>
     <li *ngIf="profile.links.Git">
@@ -18,7 +18,7 @@
 
 <div class="right"><a href="mailto:tilakpuli15@gmail.com">tilakpuli15@gmail.com</a></div>
 
-<main>
+<main [ngClass]="{ 'blur-content': sideMenuOpened }">
   <app-profile class="main-content" [profile]="profile"> </app-profile>
 </main>
 
