@@ -20,10 +20,10 @@ const Gojek: Employment = {
   company: 'Gojek',
   range: '2019 May - 2019 Dec',
   notes: [
-    "Worked on a system to collect employee's feedback and reviews to calibrate rating and hike.",
-    'Wrote previous NodeJs back-end using Ruby on Rails and migrated from MongoDB to PostgresDB for cleaner and stable product.',
-    'Worked on all layers of the product development like split stories, building React UI, Backend and setting up application in Kubernetes.',
-    'Supported users with queries and travelled to Indonesia to discuss new requirements.',
+    'Worked on a system to collect employee feedbacks and reviews to calibrate rating and hikes.',
+    'Rewrote previous NodeJs back-end using Ruby on Rails and migrated from MongoDB to PostgresDB for cleaner and structured data storage and stable product.',
+    'Worked on all layers of the product development like splitting stories from business requirements, building React UI, Backend and setting up application in GCP Kubernetes.',
+    'Travelled to Indonesia to discuss about new requirements with product owners and other PM’s and supported users with queries.',
   ],
   link: new URL('https://www.gojek.io/'),
 };
@@ -33,9 +33,12 @@ const GS: Employment = {
   company: 'Goldman Sachs',
   range: '2020 Mar - Present',
   notes: [
-    'Worked on a dashboard to manage AWS resources in 100+ accounts and regions with authorization, auditability and resilience.',
-    'Using this dashboard, We have onBoarded 10,000+ AWS SSM documents from previous gitlab or direct invocations.',
-    "Took complete responsibility for UX/UI and built React web application from scratch and also worked on backend to build respective API's.",
+    'Worked on a dashboard to manage AWS resources in 100+ accounts and multiple regions with proper authorization, traceability and resilience.',
+    'Took complete responsibility for UX/UI and built React web application from scratch using libraries like Redux, Styled components. Followed TDD to write tests for 90%+ of the code using React testing library',
+    'Actively collected feedback from users and team to improve usability',
+    'Worked on RESTful Spring boot web service to invoke AWS APIs and store requests and responses in PostgresDB',
+    'Helped new Joiners onboard to the team and getting to pace. Also helped other teams move 10000+ SSM documents from existing GitLab based invocations to new dashboard.',
+    'Moved to Analytics team to build new UI components and improve performance and UX of existing components.',
   ],
   link: new URL('https://www.goldmansachs.com/'),
 };
