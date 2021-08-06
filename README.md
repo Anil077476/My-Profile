@@ -1,6 +1,8 @@
 # My Profile
 A Profile site to display skills, experience and works. Angular website build by me using [Brittany Chiang](https://brittanychiang.com/) design.
 
+Prod Link :- https://www.tilakpuli.me
+
 ## Story 
 I am react guy who has 2+ experience working on production scale react UI projejct. But I never got chance to work on Angular project and was curious to know what Angular provides. And also at same time I needed portfolio site. So I build this with Angular using @Brittany Chiang's profolio site as reference (As I wanted to build this quick and only concentrate on Angular). Thanks Brittany for Design and some CSS. In next version, I am planing use my own design.
 
