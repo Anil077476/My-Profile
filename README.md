@@ -1,27 +1,16 @@
-# MyProfile
+# My Profile
+A Profile site to display skills, experience and works. Angular website build by me using [Brittany Chiang](https://brittanychiang.com/) design.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+Prod Link :- https://www.tilakpuli.me
 
-## Development server
+## Story 
+I am react guy who has 2+ experience working on production scale react UI projejct. But I never got chance to work on Angular project and was curious to know what Angular provides. And also at same time I needed portfolio site. So I build this with Angular using @Brittany Chiang's profolio site as reference (As I wanted to build this quick and only concentrate on Angular). Thanks Brittany for Design and some CSS. In next version, I am planing use my own design.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to use.
+If you want to use this project as your profolio, Feel free to use it. But please credit it to Brittany Chiang as she deserves it. 
 
-## Code scaffolding
+1. Open data.ts in porfile folder and you can see most of my text data is present there. Replace it with your's.
+2. Go to Assests and update profile image and Resume. Done.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ToDo's for Next Version
+1. Create a new UX design for porfolio and implement. 
