@@ -14,3 +14,4 @@ If you want to use this project as your profolio, Feel free to use it. But pleas
 
 ## ToDo's for Next Version
 1. Create a new UX design for porfolio and implement. 
+2. Find a better way to add google analytics tracking (Currently updating github pages index.html manually)
