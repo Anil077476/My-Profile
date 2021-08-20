@@ -9,9 +9,9 @@ const about: About = {
     // prettier-ignore
     'Hello! I\'m Tilak puli, an engineer at core who loves creating stuff that improves life. As a high schooler, I was particularly fascinated by software development after seeing what a single line of code can do at scale (at that time I didn\'t know how much code runs behind it).',
   extendedIntroduction:
-    'Fast-forward to career life,and I was fortunate to learn pure programming fundamentals and about my self with help of great mentors in ' +
+    'Fast-forward to career life,and I was fortunate to learn programming fundamentals, teamwork and methodologies like Agile, TDD with the help of great mentors in ' +
     convertToHtmlLink('STEP', 'https://www.thoughtworks.com/STEP') +
-    'Internship. After Internship, I have worked with multiple clients and helped them reach their goal with User-friendly and highly efficient Web applications.',
+    'Internship. During Internship, along with programming concepts mentors immensely focused on teamwork, soft skills and personal growth. After Internship, I have worked with multiple MNC clients in finance and transportation domain and helped them reach their goal with User-friendly and highly efficient Web applications.',
   techStacks: ['Javascript', 'React', 'Node.js', 'Java', 'ROR', 'AWS'],
 };
 
@@ -57,7 +57,7 @@ const links: Links = {
 
 const myProfile: Project = {
   name: 'My Profile',
-  description: 'You are currently looking at it. A site to showcase my skills and experience on internet.',
+  description: 'You are currently looking at it. Website to showcase my skills and experience on the internet.',
   imagePath: './assets/MyProfile.png',
   git: new URL('https://github.com/tilak-puli/My-Profile'),
   link: new URL(window.location.href),
@@ -67,7 +67,7 @@ const myProfile: Project = {
 const GullyScoreboard: Project = {
   name: 'Gully Scoreboard',
   description:
-    'Cricket scoring app specifically made for gully matches with flexibility to support our gully rules. It also stats from the records like highest scores, best batsman etc',
+    'Cricket scoring app specially made for our gully matches with flexibility to support gully rules. It also show stats from records like highest scores, best batsman etc.',
   imagePath: './assets/GullyScoreboard.png',
   git: new URL('https://github.com/tilak-puli/My-Profile'),
   link: new URL('https://play.google.com/store/apps/details?id=com.colossal_dreams.scoreboard'),
@@ -79,7 +79,7 @@ const CashFlow: Project = {
   description:
     'Online version of famous board game ' +
     convertToHtmlLink('CashFlow', 'https://www.richdad.com/products/cashflow-classic') +
-    '. My team and I have build this whole game with only JS, HTML and CSS without help of any framework or library to understand the Javascript better and problems with weak data types and no structure.',
+    '. My team and I have build this game with only JS, HTML and CSS without help of any framework or library to understand the Javascript better and problems with weak data types and no project structure.',
   imagePath: './assets/Cashflow.png',
   git: new URL('https://github.com/STEP-tw/cashflow-punters'),
   link: new URL('https://cashflow-punters.herokuapp.com/'),
