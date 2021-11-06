@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~animate.css/animate.min.css';
+
 html {
   box-sizing: border-box;
 }
@@ -334,4 +336,41 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--dark-slate);
   border: 3px solid var(--navy);
   border-radius: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.delay-1 {
+  animation-delay: 100ms;
+}
+.delay-2 {
+  animation-delay: 200ms;
+}
+.delay-3 {
+  animation-delay: 300ms;
+}
+.delay-4 {
+  animation-delay: 400ms;
+}
+
+.delay-5 {
+  animation-delay: 500ms;
+}
+
+.delay-group-4 {
+  animation-delay: 2500ms;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0.01;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderNavComponent } from './sections/header-nav/header-nav.component';
 import { IconsModule } from './icons/icons.module';
 import { ShowcaseComponent } from './sections/showcase/showcase.component';
+import { NgsRevealModule } from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { ShowcaseComponent } from './sections/showcase/showcase.component';
     HeaderNavComponent,
     ShowcaseComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, RouterModule, IconsModule],
+  imports: [BrowserModule, BrowserAnimationsModule, RouterModule, IconsModule, NgsRevealModule],
   providers: [],
   bootstrap: [AppComponent],
 })

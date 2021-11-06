@@ -1,7 +1,7 @@
 <nav>
-  <div class="logo">
-    <a href="/src" aria-label="home"
-      ><svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
+  <div class="logo animate__animated animate__fadeIn" [ngClass]="{ hidden: !webLogoVisible }">
+    <a href="/" aria-label="home">
+      <svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96">
         <title>Logo</title>
         <g transform="translate(-8.000000, -2.000000)">
           <g transform="translate(11.000000, 5.000000)">
@@ -16,25 +16,33 @@
             <text x="20" y="70" fill="currentColor" font-size="66px" font-family="Consolas">T</text>
           </g>
         </g>
-      </svg></a
-    >
+      </svg>
+    </a>
   </div>
 
-  <div class="menu">
+  <div class="menu" [ngClass]="{ hidden: !webNavVisible }">
     <ul>
-      <li><a href="/#about">About</a></li>
-      <li><a href="/#experience">Experience</a></li>
-      <li><a href="/#work">Work</a></li>
-      <li><a href="/#contact">Contact</a></li>
+      <li class="animate__animated animate__fadeInDown delay-1">
+        <a href="/#about">About</a>
+      </li>
+      <li class="animate__animated animate__fadeInDown delay-2">
+        <a href="/#experience">Experience</a>
+      </li>
+      <li class="animate__animated animate__fadeInDown delay-3">
+        <a href="/#work">Work</a>
+      </li>
+      <li class="animate__animated animate__fadeInDown delay-4">
+        <a href="/#contact">Contact</a>
+      </li>
     </ul>
-    <div>
+    <div class="animate__animated animate__fadeInDown delay-5">
       <a class="resume-button" href="./assets/resume.pdf" target="_blank">Resume</a>
     </div>
   </div>
 
   <div class="mobile-menu">
     <div>
-      <button (click)="onHamburgerClick()" class="hamburger">
+      <button (click)="onHamburgerClick()" class="hamburger animate__animated animate__fadeIn">
         <div class="ham-box">
           <div class="ham-box-inner" [ngClass]="{ 'menu-open': menuOpen }"></div>
         </div>

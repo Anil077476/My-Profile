@@ -11,7 +11,7 @@ const about: About = {
   extendedIntroduction:
     'Fast-forward to career life,and I was fortunate to learn programming fundamentals, teamwork and methodologies like Agile, TDD with the help of great mentors in ' +
     convertToHtmlLink('STEP', 'https://www.thoughtworks.com/STEP') +
-    'Internship. During Internship, along with programming concepts mentors immensely focused on teamwork, soft skills and personal growth. After Internship, I have worked with multiple MNC clients in finance and transportation domain and helped them reach their goal with User-friendly and highly efficient Web applications.',
+    ' Internship. During Internship, along with programming concepts mentors immensely focused on teamwork, soft skills and personal growth. After Internship, I have worked with multiple MNC clients in finance and transportation domain and helped them reach their goal with User-friendly and highly efficient Web applications.',
   techStacks: ['Javascript', 'React', 'Node.js', 'Java', 'ROR', 'AWS'],
 };
 

@@ -6,9 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./introduction.component.css'],
 })
 export class IntroductionComponent {
+  webVisible = false;
   @Input() name: string;
   @Input() quickIntroduction: string;
   @Input() subIntroduction: string;
 
-  constructor() {}
+  constructor() {
+    setTimeout(() => (this.webVisible = true), 1000);
+  }
 }

@@ -7,10 +7,14 @@ import { Component, ElementRef, Input, OnInit } from '@angular/core';
 })
 export class HeaderNavComponent implements OnInit {
   menuOpen = false;
+  webNavVisible = false;
+  webLogoVisible = false;
   @Input() setSideMenuOpened: (menuOpen: boolean) => void;
 
   constructor(private host: ElementRef<HTMLElement>) {
     this.host.nativeElement.style.setProperty(`--menu-transform`, 'translateX(100vw)');
+    setTimeout(() => (this.webNavVisible = true), 1500);
+    setTimeout(() => (this.webLogoVisible = true), 500);
   }
 
   onHamburgerClick(): void {

@@ -6,12 +6,12 @@
   ></app-introduction>
 </section>
 
-<section id="about" class="section">
+<section id="about" class="section" [ngsReveal]="revealConfig">
   <h2 class="section-heading">About Me</h2>
   <app-about-me [about]="profile.about"> </app-about-me>
 </section>
 
-<section id="experience" class="experience section">
+<section id="experience" class="experience section" [ngsReveal]="revealConfig">
   <h2 class="section-heading">
     <span>
       Clients I've Worked With&nbsp;
@@ -21,12 +21,12 @@
   <app-experience class="inner" [experiences]="profile.experience"></app-experience>
 </section>
 
-<section id="work" class="section">
+<section id="work" class="section" [ngsReveal]="revealConfig">
   <h2 class="section-heading">Some Things I've Built</h2>
-  <app-showcase [projects]="profile.projects"></app-showcase>
+  <app-showcase [revealConfig]="revealConfig" [projects]="profile.projects"></app-showcase>
 </section>
 
-<section id="contact" class="section center-section">
+<section id="contact" class="section center-section" [ngsReveal]="revealConfig">
   <h2 class="section-heading over-line">What's Next?</h2>
   <h2 class="title">Get In Touch</h2>
   <p>

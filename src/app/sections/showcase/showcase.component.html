@@ -1,6 +1,6 @@
 <ul>
   <li class="project-wrapper" *ngFor="let project of projects">
-    <div class="project-content">
+    <div class="project-content" [ngsReveal]="revealConfig">
       <div>
         <p class="project-overline">Featured Project</p>
         <h3 class="project-title">
