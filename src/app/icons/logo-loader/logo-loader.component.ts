@@ -15,7 +15,7 @@ import { Component, OnInit } from '@angular/core';
             stroke-linejoin="round"
             points="39 0 0 22 0 67 39 90 78 68 78 23"
           ></polygon>
-          <text id="letter" x="23" y="63" fill="currentColor" font-size="52px" font-family="Consolas">T</text>
+          <text id="letter" x="18" y="65" fill="currentColor" font-size="52px">T</text>
         </g>
       </g>
     </svg>
