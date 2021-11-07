@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { IntroductionComponent } from './sections/introduction/introduction.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,16 +12,18 @@ import { HeaderNavComponent } from './sections/header-nav/header-nav.component';
 import { IconsModule } from './icons/icons.module';
 import { ShowcaseComponent } from './sections/showcase/showcase.component';
 import { NgsRevealModule } from 'ngx-scrollreveal';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    HomeComponent,
     ProfileComponent,
     IntroductionComponent,
     AboutMeComponent,
     ExperienceComponent,
     HeaderNavComponent,
     ShowcaseComponent,
+    AppComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, RouterModule, IconsModule, NgsRevealModule],
   providers: [],

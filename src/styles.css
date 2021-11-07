@@ -374,3 +374,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(0);
   }
 }
+
+#logo {
+  color: var(--green);
+}

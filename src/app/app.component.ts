@@ -1,7 +1,5 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
-import { ExternalName } from './profile/types';
-import { Profile } from './models/profile';
-import { profile } from './profile/data';
+import { Component, OnInit } from '@angular/core';
+import anime from 'animejs';
 
 @Component({
   selector: 'app-root',
@@ -9,62 +7,49 @@ import { profile } from './profile/data';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'Tilak Puli';
-  profile: Profile;
-  sideMenuOpened: boolean;
-  animationClass = '';
-  private ExternalName: any;
+  bootUpLoadingDone: boolean;
 
-  addScrollEvent(): void {
-    const threshold = 0;
-    let lastScrollY = window.pageYOffset;
-    let ticking = false;
-
-    const updateScrollDir = () => {
-      const scrollY = window.pageYOffset;
-
-      if (Math.abs(scrollY - lastScrollY) < threshold) {
-        // We haven't exceeded the threshold
-        ticking = false;
-        return;
-      }
-
-      // if at top
-      if (scrollY > 50) {
-        this.animationClass = scrollY > lastScrollY ? 'header-nav-show' : 'header-nav-hide';
-      } else {
-        this.animationClass = '';
-      }
-
-      lastScrollY = scrollY > 0 ? scrollY : 0;
-      ticking = false;
-    };
-
-    const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateScrollDir);
-        ticking = true;
-      }
-    };
-
-    /**
-     * Bind the scroll handler if `off` is set to false.
-     * If `off` is set to true reset the scroll direction.
-     */
-    window.addEventListener('scroll', onScroll);
+  constructor() {
+    this.bootUpLoadingDone = false;
   }
 
   ngOnInit(): void {
-    this.profile = profile;
-    this.ExternalName = ExternalName;
-    this.addScrollEvent();
+    this.animate();
   }
 
-  setSideMenuOpened(open: boolean): void {
-    this.sideMenuOpened = open;
+  animate(): void {
+    const loader = anime.timeline();
 
-    if (open) {
-      document.body.style.overflow = 'hidden';
-    }
+    loader
+      .add({
+        targets: '#logo polygon',
+        delay: 300,
+        duration: 1500,
+        easing: 'easeInOutQuart',
+        strokeDashoffset: [anime.setDashoffset, 0],
+      })
+      .add({
+        targets: '#letter',
+        duration: 700,
+        easing: 'easeInOutQuart',
+        opacity: 1,
+      })
+      .add({
+        targets: '#logo',
+        delay: 500,
+        duration: 300,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        scale: 0.1,
+      })
+      .add({
+        targets: '.loader',
+        duration: 200,
+        easing: 'easeInOutQuart',
+        opacity: 0,
+        zIndex: -1,
+      });
+
+    loader.finished.then(() => (this.bootUpLoadingDone = true));
   }
 }
