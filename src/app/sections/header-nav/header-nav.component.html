@@ -42,7 +42,11 @@
 
   <div class="mobile-menu">
     <div>
-      <button (click)="onHamburgerClick()" class="hamburger animate__animated animate__fadeIn">
+      <button
+        (click)="onHamburgerClick()"
+        class="hamburger animate__animated animate__fadeIn"
+        [ngClass]="{ hidden: !webLogoVisible }"
+      >
         <div class="ham-box">
           <div class="ham-box-inner" [ngClass]="{ 'menu-open': menuOpen }"></div>
         </div>

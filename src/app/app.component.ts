@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import { ExternalName } from './profile/types';
 import { Profile } from './models/profile';
 import { profile } from './profile/data';
@@ -62,5 +62,9 @@ export class AppComponent implements OnInit {
 
   setSideMenuOpened(open: boolean): void {
     this.sideMenuOpened = open;
+
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    }
   }
 }
