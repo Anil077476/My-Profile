@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import anime from 'animejs';
 
 @Component({
@@ -6,16 +6,18 @@ import anime from 'animejs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   bootUpLoadingDone: boolean;
 
   constructor() {
     this.bootUpLoadingDone = false;
   }
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.animate();
   }
+
+  ngOnInit(): void {}
 
   animate(): void {
     const loader = anime.timeline();
