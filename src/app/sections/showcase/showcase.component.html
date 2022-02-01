@@ -1,0 +1,27 @@
+<ul>
+  <li class="project-wrapper" *ngFor="let project of projects">
+    <div class="project-content" [ngsReveal]="revealConfig">
+      <div>
+        <p class="project-overline">Featured Project</p>
+        <h3 class="project-title">
+          <a href="{{ project.link }}" target="_blank">{{ project.name }}</a>
+        </h3>
+        <div class="project-description">
+          <p [innerHTML]="project.description"></p>
+        </div>
+        <ul class="tech-stack-list">
+          <li *ngFor="let tech of project.techStack">{{ tech }}</li>
+        </ul>
+        <div class="project-links">
+          <a href="{{ project.git }}" target="_blank" app-github></a>
+          <a href="{{ project.link }}" target="_blank" app-external></a>
+        </div>
+      </div>
+    </div>
+    <div class="project-image">
+      <a href="{{ project.link }}" target="_blank">
+        <div class="img"><img src="{{ project.imagePath }}" alt="{{ project.name }}" /></div>
+      </a>
+    </div>
+  </li>
+</ul>

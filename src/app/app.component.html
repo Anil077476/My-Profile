@@ -1,0 +1,6 @@
+<app-home *ngIf="bootUpLoadingDone"></app-home>
+<div class="loader-logo-background" [ngClass]="{ hidden: bootUpLoadingDone }">
+  <div class="loader-logo-wrapper">
+    <app-logo-loader></app-logo-loader>
+  </div>
+</div>

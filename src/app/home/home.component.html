@@ -1,0 +1,47 @@
+<header [ngClass]="animationClass">
+  <app-header-nav [setSideMenuOpened]="setSideMenuOpened.bind(this)"></app-header-nav>
+</header>
+<div class="left animate__animated animate__fadeIn delay-group-4">
+  <ul>
+    <li *ngIf="profile.links.Git">
+      <a class="icon" target="_blank" app-github href="{{ profile.links.Git }}"></a>
+    </li>
+    <li *ngIf="profile.links.LinkedIn">
+      <a class="icon" target="_blank" app-linked-in href="{{ profile.links.LinkedIn }}"></a>
+    </li>
+    <li *ngIf="profile.links.Instagram">
+      <a class="icon" target="_blank" app-instagram href="{{ profile.links.Instagram }}"></a>
+    </li>
+    <li *ngIf="profile.links.Twitter">
+      <a class="icon" target="_blank" app-twitter href="{{ profile.links.Twitter }}"></a>
+    </li>
+  </ul>
+</div>
+
+<div class="right animate__animated animate__fadeIn delay-group-4">
+  <a href="mailto:tilakpuli15@gmail.com">tilakpuli15@gmail.com</a>
+</div>
+
+<main [ngClass]="{ 'blur-content': sideMenuOpened }">
+  <app-profile class="main-content" [profile]="profile"> </app-profile>
+</main>
+
+<footer>
+  <div class="social-media-links-mobile">
+    <ul>
+      <li *ngIf="profile.links.Git">
+        <a class="icon" target="_blank" app-github href="{{ profile.links.Git }}"></a>
+      </li>
+      <li *ngIf="profile.links.LinkedIn">
+        <a class="icon" target="_blank" app-linked-in href="{{ profile.links.LinkedIn }}"></a>
+      </li>
+      <li *ngIf="profile.links.Instagram">
+        <a class="icon" target="_blank" app-instagram href="{{ profile.links.Instagram }}"></a>
+      </li>
+      <li *ngIf="profile.links.Twitter">
+        <a class="icon" target="_blank" app-twitter href="{{ profile.links.Twitter }}"></a>
+      </li>
+    </ul>
+  </div>
+  <a href="https://github.com/tilak-puli/My-Profile"><div>Design by Brittany Chiang & Built by Tilak Puli</div></a>
+</footer>

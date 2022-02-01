@@ -1,0 +1,9 @@
+#letter {
+  opacity: 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
