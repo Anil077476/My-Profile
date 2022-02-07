@@ -69,7 +69,7 @@ const GullyScoreboard: Project = {
   description:
     'Cricket scoring app specially made for our gully matches with flexibility to support gully rules. It also show stats from records like highest scores, best batsman etc.',
   imagePath: './assets/GullyScoreboard.png',
-  git: new URL('https://github.com/tilak-puli/My-Profile'),
+  git: new URL('https://github.com/tilak-puli/scoreboard'),
   link: new URL('https://play.google.com/store/apps/details?id=com.colossal_dreams.scoreboard'),
   techStack: ['React Native', 'nodejs'],
 };
