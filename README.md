@@ -19,5 +19,6 @@ If you want to use this project as your profolio, Feel free to use it. But pleas
 
 ## How to deploy
 For deploying this repo, I am using `angular-cli-ghpages` module for building and deploying to github pages. 
+
 Run `ng deploy --base-href=__domain__url__ --cname=__domain__url` 
 __domain__url__ example => www.tilakpuli.me
