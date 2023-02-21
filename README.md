@@ -2,7 +2,7 @@
 Web page to display skills, experience and works for software engineers. 
 An Angular website build by me using [Brittany Chiang](https://brittanychiang.com/) design.
 
-Prod Link :- https://www.tilakpuli.me
+Prod Link :- https://tilak-puli.github.io/My-Profile/
 
 ## Story 
 I am a react guy who have 2+ experience working on production scale react UI/Full stack web applications. But I never got chance to work on Angular project and was curious to know what Angular provides. And also at the same time I needed portfolio site. So I have built this application with Angular using @Brittany Chiang's profolio site as reference (As I wanted to build this quick and only concentrate on learning Angular). Thanks Brittany for Design and some CSS. In next version, I would like to update this website design to my own.
@@ -22,4 +22,4 @@ If you want to use this project as your profolio, Feel free to use it. But pleas
 For deploying this repo, I am using `angular-cli-ghpages` module for building and deploying to github pages. 
 
 Run `ng deploy --base-href=__domain__url__ --cname=__domain__url` 
-__domain__url__ example => www.tilakpuli.me
+__domain__url__ example => https://tilak-puli.github.io/My-Profile/
