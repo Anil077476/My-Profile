@@ -7,46 +7,61 @@ const about: About = {
   heading: 'About me',
   mainIntroduction:
     // prettier-ignore
-    'Hello! I\'m Tilak puli, an engineer at core who loves creating stuff that improves life. As a high schooler, I was particularly fascinated by software development after seeing what a single line of code can do at scale (at that time I didn\'t know how much code runs behind it).',
+    'Hello! I\'m Tilak puli, an engineer at core who loves creating stuff that improves life. As a student, I was particularly fascinated by software development after seeing what a single line of code can do at scale (at that time I didn\'t know how much code runs behind it).',
   extendedIntroduction:
     'Fast-forward to career life,and I was fortunate to learn programming fundamentals, teamwork and methodologies like Agile, TDD with the help of great mentors in ' +
     convertToHtmlLink('STEP', 'https://www.thoughtworks.com/STEP') +
     ' Internship. During Internship, along with programming concepts mentors immensely focused on teamwork, soft skills and personal growth. After Internship, I have worked with multiple MNC clients in finance and transportation domain and helped them reach their goal with User-friendly and highly efficient Web applications.',
-  techStacks: ['Javascript', 'React', 'Node.js', 'Java', 'ROR', 'AWS'],
+  techStacks: ['Javascript', 'React', 'Node.js', 'React Native', 'Java', 'ROR', 'AWS'],
 };
 
 const Gojek: Employment = {
-  role: 'Application Developer',
+  role: 'Software Engineer',
   company: 'Gojek',
   range: '2019 May - 2019 Dec',
   notes: [
-    'Worked on a system to collect employee feedbacks and reviews to calibrate rating and hikes.',
-    'Rewrote previous NodeJs back-end using Ruby on Rails and migrated from MongoDB to PostgresDB for cleaner and structured data storage and stable product.',
-    'Worked on all layers of the product development like splitting stories from business requirements, building React UI, Backend and setting up application in GCP Kubernetes.',
-    'Travelled to Indonesia to discuss about new requirements with product owners and other PM’s and supported users with queries.',
+    'Developed a system to collect employee feedback and reviews to calibrate ratings and hikes',
+    'Rewrote Node.js backend using Ruby on Rails and migrated from MongoDB to PostgresDB for a cleaner and more stable product',
+    'Contributed to all aspects ofthe productincluding creating user stories, building React UI, developing backend features, and running applications in Kubernetes',
+    'Traveled to Indonesia to discuss new requirements and provided user supportfor queries ',
+    'Improved the Testing coverage from 40% to 90%+ for existing and new backend and frontend repositories'
   ],
   link: new URL('https://www.gojek.io/'),
 };
 
 const GS: Employment = {
-  role: 'Application Developer',
+  role: 'Software Engineer',
   company: 'Goldman Sachs',
-  range: '2020 Mar - Present',
+  range: '2020 Mar - 2022 May',
   notes: [
-    'Worked on a dashboard to manage AWS resources in 100+ accounts and multiple regions with proper authorization, traceability and resilience.',
-    'Took complete responsibility for UX/UI and built React web application from scratch using libraries like Redux, Styled components. Followed TDD to write tests for 90%+ of the code using React testing library',
+    'Designed and Developed a dashboard to manage AWS resources with a maker-checker fl ow using AWS APIs, SSM documents, and Lambdas on multiple regions and 300+ accounts',
+    'Lead UX/UI design and development of React application from scratch',
     'Actively collected feedback from users and team to improve usability',
-    'Worked on RESTful Spring boot web service to invoke AWS APIs and store requests and responses in PostgresDB',
-    'Helped new Joiners onboard to the team and getting to pace. Also helped other teams move 10000+ SSM documents from existing GitLab based invocations to new dashboard.',
-    'Moved to Analytics team to build new UI components and improve performance and UX of existing components.',
+    'Worked on Spring Boot backend to invoke AWS APIs and helped new team members onboard to team and getting up to speed',
+    'Worked on Analytics dashboard which shows realtime visualization of millions oftransactions and accounts',
+    'Helped existing team to improve UX design and speed of analytics web application',
+    'Also worked with backend developers to improve API performance and better ways pre-compute and cache the data'
   ],
   link: new URL('https://www.goldmansachs.com/'),
+};
+
+const Mosip: Employment = {
+  role: 'Senior Software Engineer',
+  company: 'Mosip',
+  range: '2022 Sep - Present',
+  notes: [
+    'Designed and Developed a React Native module using Kotlin to handle BLE communication between Android and Apple devices for an open-source mobile app foridentity management, MOSIP',
+    'Focused on the Android BLE layer and achieved a signifi cant improvementin transfer speed,reducing transfertime from 40 seconds to approximately 1 second for150KB of data',
+    'Contributed to the development of a mobile app that enables identity managementfor millions of people across different countries and organizations',
+    'Trained and mentored junior developers and engineers, teaching skills in Clean Code and React Native to improve overallteam performance.'
+  ],
+  link: new URL('https://mosip.io/'),
 };
 
 const experience: Experience = {
   // prettier-ignore
   heading: 'Where I\'ve Worked',
-  employments: [GS, Gojek],
+  employments: [GS, Gojek, Mosip],
 };
 
 const links: Links = {
