@@ -2,10 +2,10 @@
 Web page to display skills, experience and works for software engineers. 
 An Angular website build by me using [Brittany Chiang](https://brittanychiang.com/) design.
 
-Prod Link :- https://tilak-puli.github.io/My-Profile/
+Prod Link :- https://tilakpuli.vercel.app/
 
 ## Story 
-I am a react guy who have 2+ experience working on production scale react UI/Full stack web applications. But I never got chance to work on Angular project and was curious to know what Angular provides. And also at the same time I needed portfolio site. So I have built this application with Angular using @Brittany Chiang's profolio site as reference (As I wanted to build this quick and only concentrate on learning Angular). Thanks Brittany for Design and some CSS. In next version, I would like to update this website design to my own.
+I was a React guy with 2+ experience working on production scale react UI/Full stack web applications. But I never got chance to work on Angular project and was curious to know what Angular provides. And also at the same time I needed portfolio site. So I have built this application with Angular using @Brittany Chiang's profolio site as reference (As I wanted to build this quick and only concentrate on learning Angular). Thanks Brittany for Design and some CSS. In next version, I would like to update this website design to my own.
 
 ## How to use.
 If you want to use this project as your profolio, Feel free to use it. But please credit it to Brittany Chiang as she deserves it. 
