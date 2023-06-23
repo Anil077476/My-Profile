@@ -61,7 +61,7 @@ const Mosip: Employment = {
 const experience: Experience = {
   // prettier-ignore
   heading: 'Where I\'ve Worked',
-  employments: [GS, Gojek, Mosip],
+  employments: [Mosip, GS, Gojek],
 };
 
 const links: Links = {
