@@ -14,6 +14,15 @@ import { ShowcaseComponent } from './sections/showcase/showcase.component';
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { AppComponent } from './app.component';
 
+// Add these two
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+// Export this function
+export function playerFactory(): any {
+  return import('lottie-web');
+}
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -23,10 +32,12 @@ import { AppComponent } from './app.component';
     ExperienceComponent,
     HeaderNavComponent,
     ShowcaseComponent,
-    AppComponent,
+    AppComponent
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, RouterModule, IconsModule, NgsRevealModule],
+  imports: [BrowserModule, BrowserAnimationsModule, RouterModule, IconsModule, NgsRevealModule,
+    LottieModule.forRoot({ player: playerFactory })],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}

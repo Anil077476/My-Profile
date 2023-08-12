@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
   selector: 'app-introduction',
@@ -11,6 +12,9 @@ export class IntroductionComponent {
   @Input() quickIntroduction: string;
   @Input() subIntroduction: string;
 
+  options: AnimationOptions = {
+    path: '/assets/lottie/tiger.json',
+  };
   constructor() {
     setTimeout(() => (this.webVisible = true), 1000);
   }

@@ -1,17 +1,27 @@
-<div [ngClass]="{ hidden: !webVisible }">
-  <h2 class="funky-hello animate__animated animate__fadeInUp delay-1">Hi, I'm</h2>
+<div [ngClass]="{ hidden: !webVisible }" class="introduction">
   <div>
-    <h2 class="big-heading animate__animated animate__fadeInUp delay-1">{{ name }}.</h2>
-  </div>
-  <div>
-    <h3 class="big-heading animate__animated animate__fadeInUp delay-2">{{ quickIntroduction }}</h3>
-  </div>
-  <div>
-    <p class="small-text animate__animated animate__fadeInUp delay-3">{{ subIntroduction }}</p>
-  </div>
-  <div>
-    <a href="mailto:tilakpuli15@gmail.com" class="email-link animate__animated animate__fadeInUp delay-4"
+    <h2 class="funky-hello animate__animated animate__fadeInUp delay-1">Hi, I'm</h2>
+    <div>
+      <h2 class="big-heading animate__animated animate__fadeInUp delay-1">{{ name }}.</h2>
+    </div>
+    <div>
+      <h3 class="big-heading animate__animated animate__fadeInUp delay-2">{{ quickIntroduction }}</h3>
+    </div>
+    <div>
+      <p class="small-text animate__animated animate__fadeInUp delay-3">{{ subIntroduction }}</p>
+    </div>
+    <div>
+      <a href="mailto:tilakpuli15@gmail.com" class="email-link animate__animated animate__fadeInUp delay-4"
       >Get In Touch</a
-    >
+      >
+    </div>
+  </div>
+  <div class="animation">
+    <img class="tech tech-1 animate__animated animate__pulseup animate__infinite animate__slower animate__delay-1s" src="assets/html.svg" alt="html">
+    <img class="tech tech-2 animate__animated animate__pulseup animate__infinite animate__slower animate__delay-1s" src="assets/css.svg" alt="css">
+    <img class="tech tech-3 animate__animated animate__pulseup animate__infinite animate__slower animate__delay-1s" src="assets/react.svg" alt="css">
+    <img class="tech tech-4 animate__animated animate__pulseup animate__infinite animate__slower animate__delay-1s" src="assets/js.svg" alt="css">
+    <ng-lottie [options]="options">
+    </ng-lottie>
   </div>
 </div>
