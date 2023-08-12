@@ -126,9 +126,9 @@ const CashFlow: Project = {
 
 export const profile: Profile = {
   name: 'Tilak Puli',
-  quickIntroduction: 'building digital experiences.',
+  quickIntroduction: 'I build digital experiences.',
   subIntroduction:
-    'I\'m a software engineer specializing in building user friendly and highly efficient web and mobile applications.',
+    'I\'m a software engineer specialised in building user friendly and highly efficient web and mobile applications.',
   about,
   experience,
   contact: { email: 'tilakpuli15@gmail.com' },
