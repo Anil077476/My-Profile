@@ -13,12 +13,8 @@ import { IconsModule } from './icons/icons.module';
 import { ShowcaseComponent } from './sections/showcase/showcase.component';
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { AppComponent } from './app.component';
-
-// Add these two
 import { LottieModule } from 'ngx-lottie';
-import player from 'lottie-web';
 
-// Export this function
 export function playerFactory(): any {
   return import('lottie-web');
 }
