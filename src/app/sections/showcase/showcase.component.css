@@ -210,10 +210,10 @@ img:not([alt]) {
 
 @media (min-width: 1080px) {
   .project-content {
-    grid-column: 1 / 9;
+    grid-column: 1 / 6;
   }
   .project-wrapper:nth-of-type(2n + 1) .project-content {
-    grid-column: 5 / -1;
+    grid-column: 8 / -1;
   }
 }
 

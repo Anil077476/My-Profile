@@ -86,17 +86,27 @@ const links: Links = {
 const myProfile: Project = {
   name: 'My Profile',
   description: 'You are currently looking at it. Website to showcase my skills and experience on the internet.',
-  imagePath: './assets/MyProfile.png',
+  imagePath: './assets/pet-projects/MyProfile.png',
   git: new URL('https://github.com/tilak-puli/My-Profile'),
   link: new URL(window.location.href),
   techStack: ['Angular', 'nodejs']
+};
+
+const CricRecords: Project = {
+  name: 'Cricket Records',
+  description:
+    'Website to view records and stats of cricket matches.',
+  imagePath: './assets/pet-projects/CricRecords.png',
+  git: new URL('https://github.com/tilak-puli/step-cric-records'),
+  link: new URL('https://step-cric-records.vercel.app/'),
+  techStack: ['NextJs', 'Vercel', 'Chakra UI']
 };
 
 const GullyScoreboard: Project = {
   name: 'Gully Scoreboard',
   description:
     'Cricket scoring app specially made for our gully matches with flexibility to support gully rules. It also show stats from records like highest scores, best batsman etc.',
-  imagePath: './assets/GullyScoreboard.png',
+  imagePath: './assets/pet-projects/GullyScoreboard.png',
   git: new URL('https://github.com/tilak-puli/scoreboard'),
   link: new URL('https://play.google.com/store/apps/details?id=com.colossal_dreams.scoreboard'),
   techStack: ['React Native', 'nodejs']
@@ -108,7 +118,7 @@ const CashFlow: Project = {
     'Online version of famous board game ' +
     convertToHtmlLink('CashFlow', 'https://www.richdad.com/products/cashflow-classic') +
     '. My team and I have build this game with only JS, HTML and CSS without help of any framework or library to understand the Javascript better and problems with weak data types and no project structure.',
-  imagePath: './assets/Cashflow.png',
+  imagePath: './assets/pet-projects/Cashflow.png',
   git: new URL('https://github.com/STEP-tw/cashflow-punters'),
   link: new URL('https://cashflow-punters.herokuapp.com/'),
   techStack: ['Javascript', 'nodejs', 'HTML', 'CSS']
@@ -116,12 +126,12 @@ const CashFlow: Project = {
 
 export const profile: Profile = {
   name: 'Tilak Puli',
-  quickIntroduction: 'I create web/mobile experiences.',
+  quickIntroduction: 'building digital experiences.',
   subIntroduction:
     'I\'m a software engineer specializing in building user friendly and highly efficient web and mobile applications.',
   about,
   experience,
   contact: { email: 'tilakpuli15@gmail.com' },
   links,
-  projects: [myProfile, GullyScoreboard, CashFlow]
+  projects: [myProfile, CricRecords, GullyScoreboard, CashFlow]
 };
