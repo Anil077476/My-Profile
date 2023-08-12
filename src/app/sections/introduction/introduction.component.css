@@ -8,12 +8,20 @@
 
 .introduction > .animation {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
-.animation > .tech {
+.tech {
   width: 5rem;
   position: absolute;
+}
+
+.tech_background {
+  padding: 1.1rem;
+  background: #222;
+  border-radius: 50%;
+  display: flex;
 }
 
 .tech-1 {
@@ -32,6 +40,16 @@
 .tech-4 {
   bottom: 10rem;
   right: 2rem;
+}
+
+.tech-5 {
+  top: 0;
+  left: 5rem;
+}
+
+.tech-6 {
+  top: 0;
+  right: 5rem;
 }
 
 @media (min-width: 701px) {
@@ -60,6 +78,16 @@
 
   .tech-4 {
     bottom: 2rem;
+    right: 1rem;
+  }
+
+  .tech-5 {
+    top: 9rem;
+    left: 0;
+  }
+
+  .tech-6 {
+    top: 9rem;
     right: 1rem;
   }
 }
