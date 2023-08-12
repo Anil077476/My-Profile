@@ -45,7 +45,7 @@ const GS1: Employment = {
 const GS2: Employment = {
   role: 'Software Engineer',
   company: 'Goldman Sachs - Analytics',
-  range: '2020 Mar - 2022 May',
+  range: '2021 Jan - 2022 May',
   notes: [
     'Worked on existing Analytics dashboard which shows real time visualization of 300 thousands of transactions and 2000+ accounts',
     'Helped existing team to improve UX design using design systems, pagination and restructuring pages using React, Redux, High Charts and Material UI.',
