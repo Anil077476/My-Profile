@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ExternalName } from '../profile/types';
+import { profile } from '../../assets/data';
 import { Profile } from '../models/profile';
-import { profile } from '../profile/data';
+import { ExternalName } from '../profile/types';
 
 @Component({
   selector: 'app-home',

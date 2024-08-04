@@ -1,5 +1,5 @@
-import { About, Employment, Experience, ExternalName, Links, Project } from './types';
-import { Profile } from '../models/profile';
+import { Profile } from '../app/models/profile';
+import { About, Employment, Experience, ExternalName, Links, Project } from '../app/profile/types';
 
 const convertToHtmlLink = (name: string, url: string) => `<a href="${url}">${name}</a>`;
 
@@ -12,12 +12,28 @@ const about: About = {
     'Fast-forward to career life,and I was fortunate to learn programming fundamentals, teamwork and methodologies like Agile, TDD with the help of great mentors in ' +
     convertToHtmlLink('STEP', 'https://www.thoughtworks.com/STEP') +
     ' Internship. During Internship, along with programming concepts mentors immensely focused on teamwork, soft skills and personal growth. After Internship, I have worked with multiple MNC clients in finance and transportation domain and helped them reach their goal with User-friendly and highly efficient Web applications.',
-  techStacks: ['Javascript', 'React', 'Node.js', 'React Native', 'Java', 'ROR', 'AWS']
+  techStacks: ['Javascript', 'React', 'Node.js', 'NestJs', 'AWS', 'Java','React Native']
+};
+
+
+const Travelopia: Employment = {
+  role: 'Senior Product Engineer',
+  company: 'Travelopia',
+  range: '2023 Dec - Present',
+  notes: [
+    'Significantly contributed to enhancing security by developing a secure payment portal that addresses critical issues in the previous system',
+    'Collaborated with UX Designers to craft an intuitive interface for users, improving itinerary viewing',
+    'Created an internal portal to optimize itinerary creation by integrating external bed banks for hotel and service bookings',
+    'Integrated Google Maps for seamless service booking near popular attractions',
+    'Established a comprehensive reporting system to keep stakeholders updated on transactions processed via the new payment portal',
+    'Tech Stack Used: React, NestJs and AWS',
+  ],
+  link: new URL('https://www.travelopia.com/')
 };
 
 const Gojek: Employment = {
   role: 'Software Engineer',
-  company: 'Gojek',
+  company: 'Thoughtworks - Gojek',
   range: '2019 May - 2019 Dec',
   notes: [
     'Designed and Developed a React Native module to handle BLE communication between Android and IOS devices for an open-source identity management mobile application.',
@@ -30,7 +46,7 @@ const Gojek: Employment = {
 
 const GS1: Employment = {
   role: 'Software Engineer',
-  company: 'Goldman Sachs - Control Plane',
+  company: 'Thoughtworks - Goldman Sachs - Control Plane',
   range: '2020 Mar - 2020 Dec',
   notes: [
     'Designed and Developed a web dashboard to manage 300+ AWS accounts in multiple regions with a maker-checker flow',
@@ -44,7 +60,7 @@ const GS1: Employment = {
 
 const GS2: Employment = {
   role: 'Software Engineer',
-  company: 'Goldman Sachs - Analytics',
+  company: 'Thoughtworks - Goldman Sachs - Analytics',
   range: '2021 Jan - 2022 May',
   notes: [
     'Worked on existing Analytics dashboard which shows real time visualization of 300 thousands of transactions and 2000+ accounts',
@@ -58,8 +74,8 @@ const GS2: Employment = {
 
 const Mosip: Employment = {
   role: 'Senior Software Engineer',
-  company: 'Mosip',
-  range: '2022 Sep - Present',
+  company: 'Thoughtworks - Mosip',
+  range: '2022 Sep - 2023 Dec',
   notes: [
     'Developed a web application to collect employee feedback and reviews to calibrate ratings and hikes',
     'Rewrote Node.js backend using Ruby on Rails and migrated from MongoDB to PostgresDB for a cleaner and more stable product',
@@ -74,7 +90,7 @@ const Mosip: Employment = {
 const experience: Experience = {
   // prettier-ignore
   heading: 'Where I\'ve Worked',
-  employments: [Mosip, GS2, GS1, Gojek]
+  employments: [Travelopia, Mosip, GS2, GS1, Gojek]
 };
 
 const links: Links = {
