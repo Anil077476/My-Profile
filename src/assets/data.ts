@@ -150,7 +150,7 @@ const Finly: Project = {
   name: 'Finly – AI Expense Tracker',
   description:
     'Android AI expense tracker with chat interface for natural-language logging and queries like “How much did I spend on groceries this month?” Integrated LangChain + Google Gemini to parse free‑text into structured transactions and answer analytical queries.',
-  imagePath: './assets/pet-projects/finly.webp',
+  imagePath: './assets/pet-projects/finly.png',
   git: new URL('https://github.com/tilak-puli/finly'),
   link: new URL('https://play.google.com/store/apps/details?id=com.finly.ai'),
   techStack: [
