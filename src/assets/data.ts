@@ -6,42 +6,60 @@ const convertToHtmlLink = (name: string, url: string) => `<a href="${url}">${nam
 const about: About = {
   heading: 'About me',
   mainIntroduction:
-  // prettier-ignore
+    // prettier-ignore
     'Hello! I\'m Tilak puli, an engineer at core who loves creating stuff that improves life. As a student, I was particularly fascinated by software development after seeing what a single line of code can do at scale (at that time I didn\'t know how much code runs behind it).',
   extendedIntroduction:
     'Fast-forward to career life,and I was fortunate to learn programming fundamentals, teamwork and methodologies like Agile, TDD with the help of great mentors in ' +
     convertToHtmlLink('STEP', 'https://www.thoughtworks.com/STEP') +
     ' Internship. During Internship, along with programming concepts mentors immensely focused on teamwork, soft skills and personal growth. After Internship, I have worked with multiple MNC clients in finance and transportation domain and helped them reach their goal with User-friendly and highly efficient Web applications.',
-  techStacks: ['Javascript', 'React', 'Node.js', 'NestJs', 'AWS', 'Java','React Native']
+  techStacks: [
+    'Javascript',
+    'Typescript',
+    'React',
+    'Node.js',
+    'NestJs',
+    'AWS',
+    'Java',
+    'Kotlin',
+    'Spring Boot',
+    'MongoDB',
+    'PostgresDB',
+    'React Native',
+    'CrewAI',
+    'LangChain',
+    'Google Gemini',
+  ],
 };
-
 
 const Travelopia: Employment = {
   role: 'Senior Product Engineer',
   company: 'Travelopia',
   range: '2023 Dec - Present',
   notes: [
-    'Significantly contributed to enhancing security by developing a secure payment portal that addresses critical issues in the previous system',
-    'Collaborated with UX Designers to craft an intuitive interface for users, improving itinerary viewing',
-    'Created an internal portal to optimize itinerary creation by integrating external bed banks for hotel and service bookings',
-    'Integrated Google Maps for seamless service booking near popular attractions',
-    'Established a comprehensive reporting system to keep stakeholders updated on transactions processed via the new payment portal',
+    'Developed a secure payment portal enabling multiple payment sources like Card and ACH',
+    'Built itinerary creation portal integrating third-party services like Amadeus and iVector for hotels, flights and other services',
+    'Led development of user-facing travel proposals to present trips clearly and improve conversion',
+    'Implemented features like Google Maps integration and LLM-powered itinerary recommendations and explanations',
+    'Introduced vibe coding practices and onboarded the team to the AI-powered Cursor editor to improve speed and quality',
     'Tech Stack Used: React, NestJs and AWS',
   ],
-  link: new URL('https://www.travelopia.com/')
+  link: new URL('https://www.travelopia.com/'),
 };
 
 const Gojek: Employment = {
-  role: 'Software Engineer',
+  role: 'Software Consultant',
   company: 'Thoughtworks - Gojek',
   range: '2019 May - 2019 Dec',
   notes: [
-    'Designed and Developed a React Native module to handle BLE communication between Android and IOS devices for an open-source identity management mobile application.',
-    'Focused on the Android BLE layer using Kotlin and achieved a significant improvement in transfer speed, reducing transfer time from 40 seconds to approximately 1 second for 150KB of data ',
-    'Contributed to the development of a React Native mobile app that enables identity management for 20+ millions of users across different countries and organizations',
-    'Trained and mentored junior developers, teaching skills in Clean Code and React Native to improve overall team performance.'
+    'Developed an employee feedback and reviews web application, optimizing ratings and hikes',
+    'Migrated Node.js backend to Ruby on Rails, improving stability and moving data from MongoDB to PostgresDB',
+    'Expanded Express.js backend and introduced a parallel Ruby on Rails backend',
+    'Managed end-to-end product development: user stories, React UI, backend features, and Kubernetes deployment',
+    'Traveled to Indonesia for requirements discussions and user support',
+    'Improved testing coverage from 40% to 90%+ across backend and frontend repositories',
+    'Tech Stack Used: React, NodeJs, Express, Ruby on Rails, MongoDB, GCP',
   ],
-  link: new URL('https://www.gojek.io/')
+  link: new URL('https://www.gojek.io/'),
 };
 
 const GS1: Employment = {
@@ -53,9 +71,9 @@ const GS1: Employment = {
     'Used AWS APIs, SSM documents, and Lambdas to perform customisable complex operations in AWS',
     'Lead UX/UI design and development of React application from scratch using Redux, Jest, React testing library, Ant Design system and axios.',
     'Worked on Spring Boot backend to invoke complex AWS APIs and respond back to UI with response that is paginated and structured',
-    'Helped new team members onboard to team and getting up to speed and handle maintenance.'
+    'Helped new team members onboard to team and getting up to speed and handle maintenance.',
   ],
-  link: new URL('https://www.goldmansachs.com/')
+  link: new URL('https://www.goldmansachs.com/'),
 };
 
 const GS2: Employment = {
@@ -65,11 +83,12 @@ const GS2: Employment = {
   notes: [
     'Worked on existing Analytics dashboard which shows real time visualization of 300 thousands of transactions and 2000+ accounts',
     'Helped existing team to improve UX design using design systems, pagination and restructuring pages using React, Redux, High Charts and Material UI.',
-    'Also worked on increasing speed of analytics API’s which perform real time computations on 300K+ transactions and accounts. Reduced the response time from over a minute ot less than 10 secs with help of pre-compute and cache the data',
+    'Also worked on increasing speed of analytics API’s which perform real time computations on 300K+ transactions and accounts. Reduced the response time from over a minute to less than 10 seconds with help of pre-compute and cache the data',
+    'Helped team improve Postgres database design to improve efficiency and processing time',
     'Worked on credit team’s Spring boot micro services which are crucial part in the system',
-    'Worked on User facing Web application to create screens for analytics in a Mono repo React application'
+    'Worked on User facing Web application to create screens for analytics in a Mono repo React application',
   ],
-  link: new URL('https://www.goldmansachs.com/')
+  link: new URL('https://www.goldmansachs.com/'),
 };
 
 const Mosip: Employment = {
@@ -77,26 +96,26 @@ const Mosip: Employment = {
   company: 'Thoughtworks - Mosip',
   range: '2022 Sep - 2023 Dec',
   notes: [
-    'Developed a web application to collect employee feedback and reviews to calibrate ratings and hikes',
-    'Rewrote Node.js backend using Ruby on Rails and migrated from MongoDB to PostgresDB for a cleaner and more stable product',
-    'Worked on existing Express JS backend to add new features in parallel to new ROR backend',
-    'Contributed to all aspects of the product including creating user stories, building React UI, developing backend features, and running applications in Kubernetes',
-    'Traveled to Indonesia to discuss new requirements and provided user support for queries',
-    'Improved the Testing coverage from 40% to 90%+ for existing and new backend and frontend repositories'
+    'Developed a high-performance React Native module for BLE communication in an identity management app',
+    'Optimized Android BLE layer using Kotlin, reducing transfer time from 40 seconds to ~1 second for 150KB',
+    'Contributed to a React Native app used by 20M+ users for secure identity management',
+    'Designed and developed open-source React Native SDKs for mobile security, including API design, docs and testing',
+    'Mentored junior developers in Clean Code principles and React Native best practices',
+    'Tech Stack Used: React Native, Kotlin, Android, Bluetooth Low Energy',
   ],
-  link: new URL('https://mosip.io/')
+  link: new URL('https://mosip.io/'),
 };
 
 const experience: Experience = {
   // prettier-ignore
   heading: 'Where I\'ve Worked',
-  employments: [Travelopia, Mosip, GS2, GS1, Gojek]
+  employments: [Travelopia, Mosip, GS2, GS1, Gojek],
 };
 
 const links: Links = {
   [ExternalName.Git]: new URL('https://github.com/tilak-puli/My-Profile'),
   [ExternalName.LinkedIn]: new URL('https://www.linkedin.com/in/tilak-puli-a384111a0/'),
-  [ExternalName.Instagram]: new URL('https://www.instagram.com/tilakpuli/?hl=en')
+  [ExternalName.Instagram]: new URL('https://www.instagram.com/tilakpuli/?hl=en'),
 };
 
 const myProfile: Project = {
@@ -104,18 +123,17 @@ const myProfile: Project = {
   description: 'You are currently looking at it. Website to showcase my skills and experience on the internet.',
   imagePath: './assets/pet-projects/MyProfile.png',
   git: new URL('https://github.com/tilak-puli/My-Profile'),
-  link: new URL(window.location.href),
-  techStack: ['Angular', 'nodejs']
+  link: new URL('https://tilakpuli.site'),
+  techStack: ['Angular', 'nodejs'],
 };
 
 const CricRecords: Project = {
   name: 'Cricket Records',
-  description:
-    'Website to view records and stats of cricket matches.',
+  description: 'Website to view records and stats of cricket matches.',
   imagePath: './assets/pet-projects/CricRecords.png',
   git: new URL('https://github.com/tilak-puli/step-cric-records'),
   link: new URL('https://step-cric-records.vercel.app/'),
-  techStack: ['NextJs', 'Vercel', 'Chakra UI']
+  techStack: ['NextJs', 'Vercel', 'Chakra UI'],
 };
 
 const GullyScoreboard: Project = {
@@ -125,29 +143,46 @@ const GullyScoreboard: Project = {
   imagePath: './assets/pet-projects/GullyScoreboard.png',
   git: new URL('https://github.com/tilak-puli/scoreboard'),
   link: new URL('https://play.google.com/store/apps/details?id=com.colossal_dreams.scoreboard'),
-  techStack: ['React Native', 'nodejs']
+  techStack: ['React Native', 'nodejs'],
 };
 
-const CashFlow: Project = {
-  name: 'CashFlow',
+const Finly: Project = {
+  name: 'Finly – AI Expense Tracker',
   description:
-    'Online version of famous board game ' +
-    convertToHtmlLink('CashFlow', 'https://www.richdad.com/products/cashflow-classic') +
-    '. My team and I have build this game with only JS, HTML and CSS without help of any framework or library to understand the Javascript better and problems with weak data types and no project structure.',
+    'Android AI expense tracker with chat interface for natural-language logging and queries like “How much did I spend on groceries this month?” Integrated LangChain + Google Gemini to parse free‑text into structured transactions and answer analytical queries.',
   imagePath: './assets/pet-projects/Cashflow.png',
-  git: new URL('https://github.com/STEP-tw/cashflow-punters'),
-  link: new URL('https://cashflow-punters.herokuapp.com/'),
-  techStack: ['Javascript', 'nodejs', 'HTML', 'CSS']
+  git: new URL('https://github.com/tilak-puli/finly'),
+  link: new URL('https://play.google.com/store/apps/details?id=com.finly.ai'),
+  techStack: [
+    'Flutter',
+    'Node.js',
+    'Firebase Functions',
+    'Firestore',
+    'Firebase Auth',
+    'Express',
+    'LangChain',
+    'Google Gemini',
+  ],
+};
+
+const Trackee: Project = {
+  name: 'Trackee - AI-Powered Financial Analysis Platform',
+  description:
+    'Sequential AI agent system using CrewAI with Google Gemini LLM. Four specialized agents (P&L, Balance Sheet, Cash Flow, Integration) build on each other’s analysis. Multi-source data integration from NSE APIs, web scraping, and transcripts with confidence scoring.',
+  imagePath: './assets/pet-projects/Cashflow.png',
+  git: new URL('https://github.com/tilak-puli/trackee'),
+  link: new URL('https://tilakpuli.site/trackee'),
+  techStack: ['CrewAI', 'Google Gemini', 'Python', 'FastAPI', 'Pydantic', 'Web Scraping'],
 };
 
 export const profile: Profile = {
   name: 'Tilak Puli',
   quickIntroduction: 'I build digital experiences.',
   subIntroduction:
-    'I\'m a software engineer specialised in building user friendly and highly efficient web and mobile applications.',
+    "I'm a software engineer specialised in building user friendly and highly efficient web and mobile applications.",
   about,
   experience,
   contact: { email: 'tilakpuli15@gmail.com' },
   links,
-  projects: [myProfile, CricRecords, GullyScoreboard, CashFlow]
+  projects: [myProfile, CricRecords, GullyScoreboard, Finly, Trackee],
 };
