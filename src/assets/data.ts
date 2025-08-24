@@ -150,7 +150,7 @@ const Finly: Project = {
   name: 'Finly – AI Expense Tracker',
   description:
     'Android AI expense tracker with chat interface for natural-language logging and queries like “How much did I spend on groceries this month?” Integrated LangChain + Google Gemini to parse free‑text into structured transactions and answer analytical queries.',
-  imagePath: './assets/pet-projects/Cashflow.png',
+  imagePath: './assets/pet-projects/finly.webp',
   git: new URL('https://github.com/tilak-puli/finly'),
   link: new URL('https://play.google.com/store/apps/details?id=com.finly.ai'),
   techStack: [
@@ -169,7 +169,7 @@ const Trackee: Project = {
   name: 'Trackee - AI-Powered Financial Analysis Platform',
   description:
     'Sequential AI agent system using CrewAI with Google Gemini LLM. Four specialized agents (P&L, Balance Sheet, Cash Flow, Integration) build on each other’s analysis. Multi-source data integration from NSE APIs, web scraping, and transcripts with confidence scoring.',
-  imagePath: './assets/pet-projects/Cashflow.png',
+  imagePath: './assets/pet-projects/trackee.png',
   git: new URL('https://github.com/tilak-puli/trackee'),
   link: new URL('https://tilakpuli.site/trackee'),
   techStack: ['CrewAI', 'Google Gemini', 'Python', 'FastAPI', 'Pydantic', 'Web Scraping'],
