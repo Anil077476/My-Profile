@@ -9,7 +9,7 @@ import { ExternalName } from '../profile/types';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  title = 'Tilak Puli';
+  title = 'Anil Kumble';
   profile: Profile;
   sideMenuOpened: boolean;
   animationClass = '';
